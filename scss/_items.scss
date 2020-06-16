@@ -1,0 +1,56 @@
+#work {
+  overflow-x: hidden;
+}
+
+#work-a {
+  margin-top: 6rem;
+  padding: 1rem;
+  .header {
+    margin-bottom: 1rem;
+  }
+
+  .items {
+    width: 100vw;
+
+    .item {
+      border: 1px solid black;
+      position: relative;
+
+      &-text-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $main-color;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+
+        .item-text-category {
+          transform: translate(-300%, -300%);
+          transition: all 0.5s cubic-bezier(0.3, 1, 0.4, 1);
+        }
+
+        &:hover {
+          opacity: 0.8;
+
+          .item-text-category {
+            transform: translate(0, 0);
+            opacity: 1;
+          }
+        }
+      }
+
+      &-img {
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

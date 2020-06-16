@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'neo is the best'",
+    "sass": "node-sass -w scss/ -o dist/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganneo/portfolio-website.git"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "Neo Gan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ganneo/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/ganneo/portfolio-website#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

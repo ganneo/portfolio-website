@@ -1,0 +1,122 @@
+.btn {
+  &-light {
+    background-color: $light-color;
+    color: $dark-color;
+    width: fit-content;
+    padding: 0.5rem;
+    transition: all 0.5s ease-in-out;
+    border: none;
+
+    &:hover {
+      background-color: darken($color: $light-color, $amount: 100%);
+      color: lighten($color: $dark-color, $amount: 100%);
+    }
+  }
+  &-dark {
+    border: none;
+    background-color: $dark-color;
+    color: $light-color;
+    width: fit-content;
+    padding: 0.5rem;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background-color: lighten($color: $light-color, $amount: 100%);
+      color: darken($color: $dark-color, $amount: 100%);
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 2rem;
+}
+.m-3 {
+  margin: 3rem;
+}
+
+.bottom-line {
+  width: 5rem;
+  height: 3px;
+  background-color: $main-color;
+  margin: 1rem 0;
+  display: inline-block;
+}
+
+%grid-share {
+  display: grid;
+  grid-gap: 1rem;
+}
+.grid-container {
+  &-1 {
+    @extend %grid-share;
+    grid-template-columns: 1fr;
+  }
+  &-2 {
+    @extend %grid-share;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &-3 {
+    @extend %grid-share;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &-4 {
+    @extend %grid-share;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.bg {
+  &-main {
+    background-color: $main-color;
+    color: $light-color;
+  }
+
+  &-dark {
+    background-color: $dark-color;
+    color: $light-color;
+  }
+
+  &-medium {
+    background-color: $medium-color;
+    color: $light-color;
+  }
+
+  &-light {
+    background-color: $light-color;
+  }
+}
