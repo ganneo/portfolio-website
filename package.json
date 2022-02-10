@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/ganneo/portfolio-website#readme",
   "dependencies": {
-    "node-sass": "^4.14.1"
+    "node-sass": "^7.0.0"
   }
 }
